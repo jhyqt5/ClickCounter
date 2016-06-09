@@ -27,6 +27,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcl-zb-89L">
                                 <rect key="frame" x="256" y="325" width="89" height="30"/>
                                 <state key="normal" title="start counter"/>
+                                <connections>
+                                    <action selector="startCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Esd-05-QAM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -39,6 +42,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="8t9-y7-wa5" secondAttribute="trailing" id="dIG-Rb-0xS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="8t9-y7-wa5" id="a94-IZ-QIB"/>
+                        <outlet property="startButtonLabel" destination="bcl-zb-89L" id="cEa-UR-Ds6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
